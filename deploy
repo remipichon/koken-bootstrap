@@ -1,3 +1,3 @@
-cdate=$(date +"%Y-%m-%d")
-cp -r dist "bootstrap_${cdate}"
-scp -r "bootstrap_${cdate}" root@51.254.97.48:/data/koken/www/storage/themes
+cdate=$(date +"%Y-%m-%d_%H-%M-%S")
+mv dist release/"bootstrap_${cdate}"
+scp -r release/"bootstrap_${cdate}" root@51.254.97.48:/data/koken/www/storage/themes
