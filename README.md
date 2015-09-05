@@ -20,6 +20,7 @@ Installation
 To build koken-bootstrup just run the following commands:
 
     $ npm install
+    $ bower install
     $ grunt init
     $ grunt
 
