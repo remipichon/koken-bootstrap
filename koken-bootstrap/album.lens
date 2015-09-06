@@ -111,9 +111,9 @@
 
         <div class="row thumbnails">
           <koken:loop>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
               <koken:link class="thumbnail">
-                <koken:img size="1:1" />
+                <koken:img class="album-thumbmail" size="1:1" />
               </koken:link>
             </div>
           </koken:loop>
