@@ -24,11 +24,11 @@
       <div class="col-sm-12">
         <ul class="pager">
           <koken:parent>
-            <koken:variable name="previous_label" value="Newer" />
-            <koken:variable name="next_label" value="Older" />
+            <koken:variable name="previous_label" value="Précédent" />
+            <koken:variable name="next_label" value="Suivant" />
           <koken:else>
-            <koken:variable name="previous_label" value="Previous" />
-            <koken:variable name="next_label" value="Next" />
+            <koken:variable name="previous_label" value="Précédent" />
+            <koken:variable name="next_label" value="Suivant" />
           </koken:parent>
 
           <koken:previous>
@@ -41,8 +41,14 @@
 
           <li class="disabled">
             <a href="#">
-              {{ content.context.position }} of {{ content.context.total }}
+              {{ content.context.position }} sur {{ content.context.total }}
             </a>
+          </li>
+
+          <li>
+          <koken:link lightbox="true" class="button" bind_to_key="l">
+            <i class="fa fa-expand"></i> Diaporama
+          </koken:link>
           </li>
 
           <koken:next>
@@ -54,34 +60,6 @@
           </koken:next>
         </ul> <!-- pager -->
 
-        <ul class="nav nav-tabs">
-          <li class="active">
-            <a href="#tab-content" data-toggle="tab">
-              {{ content.title | content.filename }}
-            </a>
-          </li>
-
-          <li class="dropdown pull-right">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-              <i class="fa fa-share"></i> Share <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <koken:include file="_include/share-content-list.html" />
-            </ul>
-          </li>
-          <li class="pull-right">
-            <koken:link lightbox="true" class="button" bind_to_key="l">
-              <i class="fa fa-expand"></i> Lightbox
-            </koken:link>
-          </li>
-          <koken:exif>
-          <li class="pull-right">
-            <a href="#tab-exif" data-toggle="tab">
-              <i class="fa fa-camera-retro"></i> Exif
-            </a>
-          </li>
-          </koken:exif>
-        </ul>
 
         <div class="tab-content">
           <div class="tab-pane active" id="tab-content">
@@ -104,21 +82,10 @@
                 <koken:not empty="content.caption">
                   {{ content.caption paragraphs="true" }}
                 <koken:else>
-                  <p>No caption set.</p>
+                  <p>Pas de description.</p>
                 </koken:not>
               </div> <!-- col-sm-8 -->
               <div class="col-sm-4">
-                <p>
-                  <strong>License:</strong> {{ content.license.clean }}
-                </p>
-
-                <p>
-                  <strong>Uploaded:</strong> {{ content.uploaded_on }}
-                </p>
-
-                <p>
-                  <strong>Captured:</strong> {{ content.captured_on }}
-                </p>
 
                 <koken:categories>
                   <p>
@@ -153,7 +120,7 @@
 
                 <koken:max_download>
                   <p>
-                    <strong>Download image:</strong> <koken:link>
+                    <strong>Télécharger l'image:</strong> <koken:link>
                       {{ max_download.label }}&nbsp;({{ max_download.width }}x{{ max_download.height }})
                     </koken:link>
                   </p>
@@ -161,14 +128,10 @@
 
                 <koken:parent>
                   <p>
-                    <strong>From the album:</strong> <koken:link title="View {{ album.title }}">
+                    <strong>De l'album:</strong> <koken:link title="View {{ album.title }}">
                     {{ album.title }}</koken:link>
                   </p>
                 </koken:parent>
-
-                <koken:geolocation>
-                  <a href="http://maps.google.com/?q={{ geolocation.latitude }},{{ geolocation.longitude }}" target="_blank">View map</a>
-                </koken:geolocation>
 
               </div> <!-- col-sm-4 -->
             </div> <!-- row -->

@@ -29,35 +29,12 @@
       <div class="col-sm-12">
         <koken:include file="_include/pager.html" />
 
-        <ul class="nav nav-tabs">
-          <li class="active disabled">
-            <a href="#">
-              {{ album.title }}
-            </a>
-          </li>
-
-          <koken:if true="album.public">
-          <li class="dropdown pull-right">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-              <i class="fa fa-share"></i> Share <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <koken:include file="_include/share-album-list.html" />
-            </ul>
-          </li>
-          </koken:if>
-          <li class="pull-right">
-            <a href="{{ album.rss }}">
-              <i class="fa fa-rss"></i> RSS
-            </a>
-          </li>
-          <li class="pull-right">
-            <koken:link lightbox="true" class="button" bind_to_key="l">
-              <i class="fa fa-expand"></i> Lightbox
-            </koken:link>
-          </li>
-        </ul>
-
+        <!--<div class="pull-right">-->
+          <!--<koken:link lightbox="true" class="button" bind_to_key="l">-->
+            <!--<i class="fa fa-expand"></i> Diaporama-->
+          <!--</koken:link>-->
+        <!--</div>-->
+        <!---->
         <div class="row">
           <div class="col-sm-8">
             <h2>
@@ -67,6 +44,13 @@
             {{ album.description paragraphs="true" }}
           </div> <!-- col-sm-8 -->
           <div class="col-sm-4">
+
+            <p>
+              <koken:link lightbox="true" class="button" bind_to_key="l">
+                <i class="fa fa-expand"></i> Diaporama
+              </koken:link>
+            </p>
+
             <koken:topics>
               <p>
                 <strong>Related content:</strong>
@@ -107,6 +91,7 @@
               </p>
             </koken:parent>
           </div> <!-- col-sm-4 -->
+
         </div> <!-- row -->
 
         <div class="row thumbnails">
