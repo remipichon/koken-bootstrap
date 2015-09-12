@@ -43,3 +43,23 @@ Supported templates
   * Categories - *Overview and detailed view of categories*
   * Tags - *Overview and detailed view of tags*
   * Timeline - *Timeline of every recent changes and updates*
+
+
+
+Dev
+------
+    $ ./deploy_local
+
+with from Admin UI, uncheck "Settings/Site Publishing/Template caching" (do not do that in production)
+
+
+
+Deploy
+---------
+
+    $  grunt
+    $  ./deploy_prod
+
+Then changes something from "Site" in order to be askeb by Koken to "Publish changes".
+
+Be careful, I didn't fully understand how theme works, DO NOT switch themes. Basically, DO NOT use "Themes" tab from Site page.

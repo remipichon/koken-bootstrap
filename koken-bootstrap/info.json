@@ -1,6 +1,6 @@
 {
 	"name": "koken-bootstrap",
-	"version": "0.0.1",
+	"version": "0.0.12",
 	"description": "Theme build upon the Twitter Bootstrap framework and Font Awesome.",
 	"author": {
 		"name": "Moritz Lipp",

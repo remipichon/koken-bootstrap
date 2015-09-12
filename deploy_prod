@@ -1,3 +1,6 @@
 cdate=$(date +"%Y-%m-%d_%H-%M-%S")
-mv dist release/"bootstrap_${cdate}"
-scp -r release/"bootstrap_${cdate}" root@51.254.97.48:/data/koken/www/storage/themes
+cp -r dist bootstrap
+ssh root@51.254.97.48 rm -rf /home/docker/data/koken/www/storage/themes/bootstrap
+scp -r bootstrap root@51.254.97.48:/data/koken/www/storage/themes
+mv bootstrap release/"bootstrap_${cdate}"
+
