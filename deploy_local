@@ -1,0 +1,4 @@
+grunt
+mv dist bootstrap-dev
+ssh docker@boot2dockerVagrant rmdir ~/data/koken/www/storage/themes/bootstrap-dev
+scp -r bootstrap-dev docker@boot2dockerVagrant:~/data/koken/www/storage/themes
