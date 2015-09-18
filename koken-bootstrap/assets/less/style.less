@@ -33,11 +33,39 @@ h2, h3 {
 }
 
 .essays {
-  .k-content {
-    text-align: center;
-    img{
-      width:50%;
-      height: 50%;
+
+  article:nth-of-type(odd){
+    .k-content-embed {
+      float: right;
+    }
+    p {
+      float: left;
+    }
+  }
+
+  article:nth-of-type(even){
+    .k-content-embed {
+      float: left;
+    }
+    p {
+      float: right;
+    }
+  }
+
+  .panel-body {
+    p {
+      margin-top: 10px ;
+      width: 50%;
+    }
+    .k-content-embed {
+      width: 50%;
+      .k-content {
+        text-align: center;
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
     }
   }
 }
