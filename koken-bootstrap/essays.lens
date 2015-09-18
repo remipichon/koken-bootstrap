@@ -2,9 +2,9 @@
 
 <koken:load limit="10">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-12">
 
-      <section role="main">
+      <section role="main" class="essays">
         <koken:loop>
           <article class="panel panel-default">
             <header class="panel-heading">
@@ -21,15 +21,19 @@
               {{ essay.content }}
             </section>
           </article>
+          <koken:more>
+            <span class="row col-sm-12 text-center read-more">
+              <span>
+                <koken:link class="read_more rarr" title="{{ essay.title }}">{{ essay.read_more_label }}</koken:link>
+              </span>
+            </span>
+          </koken:more>
         </koken:loop>
 
         <koken:include file="_include/pagination.html" />
       </section>
 
     </div>
-    <div class="col-sm-4">
-      <koken:include file="_include/essay-sidebar.html" />
-    </div> <!-- col-sm-4 -->
   </div> <!-- row -->
 <koken:else>
   <koken:note>

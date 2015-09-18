@@ -4,7 +4,7 @@
   <koken:load limit="12">
     <div class="row">
       <koken:loop>
-        <div class="col-xs-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="thumbnail">
               <koken:link title="View {{ album.title }}">
                 <koken:img size="8:5" lazy="true" />

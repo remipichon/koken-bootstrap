@@ -23,7 +23,7 @@
     </koken:head>
 
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-12">
         <koken:include file="_include/essay-pager.html" />
 
         <article>
@@ -33,7 +33,7 @@
             </h1>
 
             <p>
-              <strong>Published:</strong> <koken:time />
+              <strong>Publié le</strong> <koken:time />
             </p>
           </header>
 
@@ -60,15 +60,6 @@
                 </koken:loop>
               </div>
             </koken:topics>
-
-            <div class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                <i class="fa fa-share"></i> Share <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <koken:include file="_include/share-essay-list.html" />
-              </ul>
-            </div>
 
             <koken:categories>
               <p>
@@ -99,9 +90,6 @@
           </koken:discussion>
         </article>
       </div> <!-- col-sm-8 -->
-      <div class="col-sm-4">
-        <koken:include file="_include/essay-sidebar.html" />
-      </div> <!-- col-sm-4 -->
     </div> <!-- row -->
   </koken:load>
 </div>

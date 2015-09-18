@@ -9,7 +9,7 @@ body {
   font-size: 0.9em;
 }
 
-h2,h3{
+h2, h3 {
   font-weight: 400;
 }
 
@@ -32,7 +32,52 @@ h2,h3{
   }
 }
 
+.essays {
+  .k-content {
+    text-align: center;
+    img{
+      width:50%;
+      height: 50%;
+    }
+  }
+}
 
+.panel {
+  border: none;
+  box-shadow: none;
+  .panel-heading {
+    background-color: transparent;
+  }
+}
+
+.read-more {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  a {
+    color: gray;
+  }
+
+  span {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid;
+    border-color: #ddd;
+
+    a:hover{
+      text-decoration: none;
+    }
+  }
+
+  span:hover {
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-color: #000000;
+  }
+}
 
 .k-content-embed {
   margin-top: @default_margin * 0.5;
@@ -47,6 +92,8 @@ h2,h3{
   h3 {
     margin-top: 0;
     color: gray;
+    text-transform: uppercase;
+    font-size: 1.4em;
   }
 
   .caption {
@@ -60,7 +107,7 @@ ul.nav-tabs {
   margin-bottom: @default_margin;
 }
 
-.album-thumbmail{
-  width:100%;
+.album-thumbmail {
+  width: 100%;
 }
 
