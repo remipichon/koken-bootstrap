@@ -2,6 +2,42 @@
 
 body {
   font-family: Lato;
+  .navbar {
+    border-radius: 0px;
+    border-top: none;
+  }
+  
+  h2, h3 {
+    font-weight: 400;
+  }
+
+}
+
+html,body.body-pulse-fullscreen {
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+
+  .fullscreen-navbar-wrapper{
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    div {
+      position: relative;
+      &.navbar-default {
+        background-color: rgba(248, 248, 248,0.8);
+        border : none;
+
+      }
+    }
+  }
+
+  .copyright-fullscreen{
+    z-index: 20;
+    bottom: 0;
+    position: fixed;
+  }
 }
 
 #navbar {
@@ -9,9 +45,6 @@ body {
   font-size: 0.9em;
 }
 
-h2, h3 {
-  font-weight: 400;
-}
 
 .index-slider {
   margin-bottom: @default_margin;
