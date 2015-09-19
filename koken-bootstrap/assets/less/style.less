@@ -32,39 +32,70 @@ h2, h3 {
   }
 }
 
-.essays {
+@media (min-width: 992px) {
+  .essays {
 
-  article:nth-of-type(odd){
-    .k-content-embed {
-      float: right;
+    article:nth-of-type(odd) {
+      .k-content-embed {
+        float: right;
+      }
+      p {
+        float: left;
+      }
     }
-    p {
-      float: left;
-    }
-  }
 
-  article:nth-of-type(even){
-    .k-content-embed {
-      float: left;
+    article:nth-of-type(even) {
+      .k-content-embed {
+        float: left;
+      }
+      p {
+        float: right;
+      }
     }
-    p {
-      float: right;
-    }
-  }
 
-  .panel-body {
-    p {
-      margin-top: 10px ;
-      width: 50%;
-    }
-    .k-content-embed {
-      width: 50%;
-      .k-content {
-        text-align: center;
-        img {
-          width: 80%;
-          height: 80%;
+    .panel-body {
+      p {
+        margin-top: 10px;
+        width: 50%;
+      }
+      .k-content-embed {
+        width: 50%;
+        .k-content {
+          text-align: center;
+          img {
+            width: 80%;
+            height: 80%;
+          }
         }
+      }
+    }
+
+    .read-more {
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      a {
+        color: gray;
+      }
+
+      span {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-bottom: 1px solid;
+        border-color: #ddd;
+
+        a:hover {
+          text-decoration: none;
+        }
+      }
+
+      span:hover {
+        border-bottom: 2px solid;
+        border-top: 2px solid;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-color: #000000;
       }
     }
   }
@@ -78,34 +109,7 @@ h2, h3 {
   }
 }
 
-.read-more {
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  a {
-    color: gray;
-  }
 
-  span {
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-bottom: 1px solid;
-    border-color: #ddd;
-
-    a:hover{
-      text-decoration: none;
-    }
-  }
-
-  span:hover {
-    border-bottom: 2px solid;
-    border-top: 2px solid;
-    border-left: 2px solid;
-    border-right: 2px solid;
-    border-color: #000000;
-  }
-}
 
 .k-content-embed {
   margin-top: @default_margin * 0.5;
