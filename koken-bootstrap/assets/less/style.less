@@ -6,9 +6,17 @@ body {
     border-radius: 0px;
     border-top: none;
   }
-  
+
   h2, h3 {
     font-weight: 400;
+  }
+  
+  .logo-wrapper {
+    padding-top: 2px;
+
+    img {
+      height: 45px;
+    }
   }
 
 }
@@ -28,7 +36,6 @@ html,body.body-pulse-fullscreen {
       &.navbar-default {
         background-color: rgba(248, 248, 248,0.8);
         border : none;
-
       }
     }
   }
@@ -102,34 +109,40 @@ html,body.body-pulse-fullscreen {
         }
       }
     }
+  }
+}
 
-    .read-more {
-      text-transform: uppercase;
-      margin-bottom: 15px;
-      a {
-        color: gray;
+.essays {
+  .read-more {
+    margin-bottom: 20px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    a {
+      color: gray;
+    }
+
+    span {
+      padding-bottom: 5px;
+      padding-top: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-bottom: 1px solid;
+      border-color: #ddd;
+
+      a:hover {
+        text-decoration: none;
       }
+    }
 
-      span {
-        padding-bottom: 5px;
-        padding-top: 5px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-bottom: 1px solid;
-        border-color: #ddd;
-
-        a:hover {
-          text-decoration: none;
-        }
-      }
-
-      span:hover {
-        border-bottom: 2px solid;
-        border-top: 2px solid;
-        border-left: 2px solid;
-        border-right: 2px solid;
-        border-color: #000000;
-      }
+    span:hover {
+      border-bottom: 2px solid;
+      border-top: 2px solid;
+      border-left: 2px solid;
+      border-right: 2px solid;
+      border-color: #000000;
     }
   }
 }

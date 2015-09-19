@@ -99,7 +99,8 @@ module.exports = function(grunt) {
             '*.lens',
             '*/*.html',
             'preview.jpg',
-            'info.json'
+            'info.json',
+            'logo/*'
           ]
         }]
       },
