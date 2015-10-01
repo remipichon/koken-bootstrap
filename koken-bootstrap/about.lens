@@ -1,0 +1,7 @@
+<koken:include file="_layout/header.html" />
+
+
+about page
+
+
+<koken:include file="_layout/footer.html" />
