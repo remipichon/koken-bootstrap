@@ -1,7 +1,129 @@
-<koken:include file="_layout/header.html" />
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="{{ site.description }}"/>
+    <meta name="author" content="{{ site.title }}"/>
+    <meta name="keywords" content="{{ site.keywords }}"/>
+
+    <koken:title/>
+
+    <koken:asset file="assets/css/koken-bootstrap.min.css"/>
+    <koken:asset file="assets/js/modernizr.min.js"/>
 
 
-about page
+    <koken:settings/>
+</head>
+
+<body>
+
+<div class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <header class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <i class="fa fa-bars"></i>
+            </button>
 
 
-<koken:include file="_layout/footer.html" />
+
+            <koken:link to="front" title="Home" class="navbar-brand logo-wrapper">
+                <div class="logo-wrapper">
+                    <koken:asset file="logo/JacPichon_logo_horizontal-01.png"/>
+                </div>
+            </koken:link>
+            <p class="navbar-text pull-left">{{ site.tagline }}</p>
+        </header>
+        <!-- navbar-header -->
+
+        <nav class="collapse navbar-collapse navbar-right" id="navbar">
+            <koken:navigation class="nav navbar-nav"/>
+        </nav>
+        <!-- navbar-collapse -->
+    </div>
+    <!-- container -->
+</div>
+<!-- navbar -->
+
+<div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="about">
+        <div class="row">
+            <div class="col-sm-12">
+                <article>
+                    <header class="page-header">
+                        <h1>A propos de moi</h1>
+                    </header>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="img">
+                            <koken:asset file="logo/JacPichon_logo_horizontal-01.png"/>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+
+                        <div class="row">
+                            <h3>Ma Passion</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </div>
+
+                        <div class="row">
+                            <h3>Ma Passion</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </div>
+
+                        <div class="row">
+                            <h3>Ma Passion</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            {{ site.copyright }}
+        </div>
+    </div>
+</div> <!-- container -->
+
+<koken:asset file="assets/js/bootstrap.min.js" />
+<koken:asset file="assets/js/koken-bootstrap.min.js" />
+</body>
+</html>
