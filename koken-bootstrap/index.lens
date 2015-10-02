@@ -14,7 +14,7 @@
     <koken:asset file="assets/css/koken-bootstrap.min.css"/>
     <koken:asset file="assets/js/modernizr.min.js"/>
 
-    <link rel="icon" href="/storage/themes/bootstrap/logo/favicon_jac.png" />
+    <link rel="icon" href="/storage/themes/bootstrap/logo/favicon_jac.png"/>
 
     <koken:settings/>
 </head>
