@@ -1,8 +1,8 @@
 rm -r dist
-rm -r bootstrap-dev
+rm -r bootstrap
 grunt
-cp -r dist bootstrap-dev
-ssh docker@boot2dockerVagrant rm -rf /home/docker/data/koken/www/storage/themes/bootstrap-dev
-scp -r bootstrap-dev docker@boot2dockerVagrant:/home/docker/data/koken/www/storage/themes
+cp -r dist bootstrap
+ssh docker@boot2dockerVagrant rm -rf /home/docker/data/koken/www/storage/themes/bootstrap
+scp -r bootstrap docker@boot2dockerVagrant:/home/docker/data/koken/www/storage/themes
 echo $(date +"%Y-%m-%d_%H-%M-%S")
 
