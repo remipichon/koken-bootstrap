@@ -14,6 +14,7 @@
     <koken:asset file="assets/css/koken-bootstrap.min.css"/>
     <koken:asset file="assets/js/modernizr.min.js"/>
 
+    <link rel="icon" href="/storage/themes/bootstrap-dev/logo/favicon_jac.png" />
 
     <koken:settings/>
 </head>
@@ -83,12 +84,12 @@
                         </div>
 
                         <div class="row">
-                            <h3>Ma Passion</h3>
+                            <h3>Mes Inspirations</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                         </div>
 
                         <div class="row">
-                            <h3>Ma Passion</h3>
+                            <h3>Mon atelier</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                         </div>
 
@@ -112,18 +113,5 @@
 
 
 
+    <koken:include file="_layout/footer.html" />
 
-
-
-
-    <div class="row">
-        <div class="col-sm-12 text-center">
-            {{ site.copyright }}
-        </div>
-    </div>
-</div> <!-- container -->
-
-<koken:asset file="assets/js/bootstrap.min.js" />
-<koken:asset file="assets/js/koken-bootstrap.min.js" />
-</body>
-</html>
