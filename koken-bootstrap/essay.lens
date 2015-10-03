@@ -22,8 +22,8 @@
       </koken:not>
     </koken:head>
 
-    <div class="row">
-      <div class="col-sm-12">
+    <div class="row row-centered">
+      <div class="col-sm-8 col-centered">
         <koken:include file="_include/essay-pager.html" />
 
         <article>
