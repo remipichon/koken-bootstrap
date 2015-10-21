@@ -95,13 +95,62 @@
         </div> <!-- row -->
 
         <div class="row thumbnails">
-          <koken:loop>
-            <div class="col-sm-4">
-              <koken:link class="thumbnail">
-                <koken:img class="album-thumbmail" size="1:1" />
-              </koken:link>
+
+
+
+          <koken:load infinite="true">
+
+            <div id="grid" class="row">
+              <div class="one-third column elem"></div>
+              <div class="one-third column elem"></div>
+              <div class="one-third column elem"></div>
             </div>
-          </koken:loop>
+
+            <!-- item inserted into each column -->
+            <koken:loop>
+
+              <div class="item thumbnail">
+
+                <koken:link title="View {{ album.title }}">
+
+                  <koken:if data="settings.albums_thumb_crop" equals="none">
+                    <koken:img lazy="true" />
+                    <koken:else>
+                      <koken:img size="{{ settings.albums_thumb_size }}" lazy="true" />
+                  </koken:if>
+
+                </koken:link>
+
+                <div class="caption">
+                  <!--<h4>-->
+                  <koken:link title="Voir {{ album.title }}"><h3>{{ album.title }}</h3></koken:link>
+                  <!--</h4>-->
+                </div>
+
+              </div>
+
+            </koken:loop>
+
+            <koken:asset file="js/thumbgrid.js" />
+
+          </koken:load>
+
+
+
+
+
+
+
+
+          <!--<koken:loop>-->
+            <!--<div class="col-sm-4">-->
+              <!--<koken:link class="thumbnail">-->
+                <!--<koken:img class="album-thumbmail" size="1:1" />-->
+              <!--</koken:link>-->
+            <!--</div>-->
+          <!--</koken:loop>-->
+
+
         </div> <!-- row -->
 
         <koken:include file="_include/pagination.html" />
