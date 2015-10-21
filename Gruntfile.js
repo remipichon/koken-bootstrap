@@ -100,7 +100,8 @@ module.exports = function(grunt) {
             '*/*.html',
             'preview.jpg',
             'info.json',
-            'logo/*'
+            'logo/*',
+            '*/*.js'
           ]
         }]
       },

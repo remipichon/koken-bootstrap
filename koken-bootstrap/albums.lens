@@ -1,35 +1,75 @@
 <koken:include file="_layout/header.html" />
 
-<div class="albums">
-  <koken:load limit="12">
-    <div class="row">
-      <koken:loop>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="thumbnail">
-              <koken:link title="View {{ album.title }}">
-                <koken:img size="8:5" lazy="true" />
-              </koken:link>
+<koken:load infinite="true">
 
-              <div class="caption">
-                <koken:link title="View {{ album.title }}">
-                  <h3>{{ album.title }}</h3>
-                </koken:link>
-              </div>
-          </div>
-        </div>
-      </koken:loop>
-    </div>
-    <div class="row">
-      <koken:include file="_include/pagination.html" />
-    </div>
-  <koken:else>
-    <koken:note>
-      <div class="alert alert-warning">
-        <p>No albums found.</p>
-      </div>
-    </koken:note>
-  </koken:load>
+<div id="grid" class="row">
+  <div class="one-third column elem"></div>
+  <div class="one-third column elem"></div>
+  <div class="one-third column elem"></div>
 </div>
+
+<!-- item inserted into each column -->
+<koken:loop>
+
+  <div class="item thumbnail">
+
+    <koken:link title="View {{ album.title }}">
+
+      <koken:if data="settings.albums_thumb_crop" equals="none">
+        <koken:img lazy="true" />
+        <koken:else>
+          <koken:img size="{{ settings.albums_thumb_size }}" lazy="true" />
+      </koken:if>
+
+    </koken:link>
+
+    <div class="caption">
+      <!--<h4>-->
+        <koken:link title="Voir {{ album.title }}"><h3>{{ album.title }}</h3></koken:link>
+      <!--</h4>-->
+    </div>
+
+  </div>
+
+</koken:loop>
+
+<koken:asset file="js/thumbgrid.js" />
+
+</koken:load>
+
+
+
+
+<!--<div class="albums">-->
+  <!--<koken:load limit="12">-->
+    <!--<div class="row">-->
+      <!--<koken:loop>-->
+        <!--<div class="col-xs-12 col-sm-6 col-md-4">-->
+          <!--<div class="thumbnail">-->
+              <!--<koken:link title="View {{ album.title }}">-->
+                <!--<koken:img size="8:5" lazy="true" />-->
+              <!--</koken:link>-->
+
+              <!--<div class="caption">-->
+                <!--<koken:link title="View {{ album.title }}">-->
+                  <!--<h3>{{ album.title }}</h3>-->
+                <!--</koken:link>-->
+              <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</koken:loop>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+      <!--<koken:include file="_include/pagination.html" />-->
+    <!--</div>-->
+  <!--<koken:else>-->
+    <!--<koken:note>-->
+      <!--<div class="alert alert-warning">-->
+        <!--<p>No albums found.</p>-->
+      <!--</div>-->
+    <!--</koken:note>-->
+  <!--</koken:load>-->
+<!--</div>-->
 
 <koken:keyboard_scroll element="div.thumbnail" />
 
