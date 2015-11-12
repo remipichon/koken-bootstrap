@@ -109,14 +109,14 @@
                   </p>
                 </koken:tags>
 
-                <koken:iptc>
-                  <p>
-                    <strong>IPTC:</strong>
-                      <koken:loop separator="&nbsp;/">
-                          {{ iptc.label }}: {{ iptc.value }}
-                      </koken:loop>
-                    </p>
-                </koken:iptc>
+                <!--<koken:iptc>-->
+                  <!--<p>-->
+                    <!--<strong>IPTC:</strong>-->
+                      <!--<koken:loop separator="&nbsp;/">-->
+                          <!--{{ iptc.label }}: {{ iptc.value }}-->
+                      <!--</koken:loop>-->
+                    <!--</p>-->
+                <!--</koken:iptc>-->
 
                 <koken:max_download>
                   <p>
