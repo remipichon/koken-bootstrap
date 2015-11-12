@@ -65,7 +65,7 @@
           <div class="tab-pane active" id="tab-content">
             <koken:content_image>
               <koken:link lightbox="true" bind_to_key="l">
-                <koken:img />
+                <koken:img preset="medium"/>
               </koken:link>
             </koken:content_image>
 
@@ -73,7 +73,7 @@
               <koken:video />
             </koken:content_video>
 
-            <div class="row">
+            <div class="row bottomInfo">
               <div class="col-sm-8">
                 <h3>
                   {{ content.title | content.filename }}
@@ -169,7 +169,15 @@
     <koken:note>
       No content found
     </koken:note>
+
+
+
   </koken:load>
 </div>
+
+<koken:asset file="js/content-album.js" />
+
+
+
 
 <koken:include file="_layout/footer.html" />
