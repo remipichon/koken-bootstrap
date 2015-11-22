@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
 
 
@@ -11,6 +11,10 @@ $(function() {
         var ratio = width / height;
 
 
+        var winHeight = $(window).height();
+        var topImg = $img.offset().top;
+        var footerHeight = $(".bottomInfo").height();
+
         var newHeight = winHeight - topImg - footerHeight;
         var newWidth = ratio * newHeight;
 
@@ -21,23 +25,19 @@ $(function() {
 
 
         //center
-        var winHeight = $(window).height();
-        var topImg = $img.offset().top;
-        var footerHeight = $(".bottomInfo").height();
-
         var wrapperWidth = $(".tab-content").width();
 
         var marginLeft = (wrapperWidth - newWidth) / 2;
 
 
-        $img.css("margin-left",marginLeft+"px");
+        $img.css("margin-left", marginLeft + "px");
 
     }
 
 
-    $(window).on('k-resize', function() {
-        console.log('k-resize event has fired!')
-        resizeAndCenter();
+    $(window).on('k-resize', function () {
+        //console.log('k-resize event has fired!')
+        //resizeAndCenter();
     });
 
 
