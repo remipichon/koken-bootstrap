@@ -62,7 +62,7 @@
 
 <div class="row">
     <div class="col-sm-12 text-center copyright-fullscreen">
-        {{ site.copyright }}
+        <a href="mailto:jacques.pichon.69@gmail.com?subject=Vos peintures&amp;cc=&amp;bcc=&amp;body=">{{ site.copyright }}</a>
     </div>
 </div>
 
