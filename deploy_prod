@@ -1,5 +1,6 @@
 cdate=$(date +"%Y-%m-%d_%H-%M-%S")
 cp -r dist bootstrap
+rm -r dist
 ssh root@51.254.97.48 cp -r /data/koken/www/storage/themes/bootstrap /data/koken/www/storage/themes-saved/"bootstrap_${cdate}"
 ssh root@51.254.97.48 rm -rf /home/docker/data/koken/www/storage/themes/bootstrap
 scp -r bootstrap root@51.254.97.48:/data/koken/www/storage/themes
